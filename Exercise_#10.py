@@ -11,34 +11,26 @@ pilihan = int(input("Masukan Pilihan Anda: "))
 
 if pilihan == 1:
     for i in range(1, 11):
-        pl = 7850
-        pm = 9200
-        pt = 12500
-        dl = 9700
-        a = i * pl + pl
-        b = i * pm + pm
-        c = i * pt + pt
-        d = i * dl + dl
-        print(i, "Liter Pertalite = Rp.%d" % a)
-        print(i, "Liter Pertamax = Rp.%d" % b)
-        print(i, "Liter Pertamax Turbo = Rp.%d" % c)
-        print(i, "Liter Dexlite = Rp.%d" % d)
-elif pilihan == 2:
-    for i in range(1,11):
-        usd = 14150
-        sgd = 10534
-        twd = 500
-        yen = 124
-        a = i * usd + 5000
-        b = i * sgd + 5000
-        c = i * twd + 5000
-        d = i * yen + 5000
-        print(i, "Dollar America = Rp.%d" % a)
-        print(i, "Dollar Singapore = Rp.%d" % b)
-        print(i, "Dollar Taiwan = Rp.%d" % c)
-        print(i, "yen = Rp.%d" % d)
+        pertalite = i * 7850
+        pertamax = i * 9200
+        pertamaxTurbo = i * 12500
+        dexlite = i * 9700
+        print("%d liter pertalite = %d" % (i, pertalite))
+        print("%d liter pertamax = %d" % (i, pertamax))
+        print("%d liter pertamax turbo = %d" % (i, pertamaxTurbo))
+        print("%d liter dexlite = %d" % (i, dexlite))
+
+elif pilihan == 2: 
+    for i in range(5000, 100000, 5000):
+        usd = i / 14150
+        sgd = i / 10534
+        twd = i / 500
+        yen = i/ 124
+        print("%d IDR = %.2f USD" % (i, usd))
+        print("%d IDR = %.2f SGD" % (i, sgd))
+        print("%d IDR = %.2f TWD" % (i, twd))
+        print("%d IDR = %.2f Yen" % (i, yen))
+    
 else:
-    print("Masukan pilihan yang benar!")
+    print("Masukan kembali pilihan anda")
 
-
-        
